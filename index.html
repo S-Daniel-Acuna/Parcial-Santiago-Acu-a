@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registración</title>
+    <link rel="stylesheet" href="cs codigo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Registración</h1>
+        <form id="registroForm" autocomplete="off">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+            <span class="error" id="errorApellido"></span>
+            <h2></h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+            <span class="error" id="errorNombre"></span>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" placeholder="Ingrese su DNI" maxlength="8" required>
+            <span class="error" id="errorDni"></span>
+
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" min="2006-01-02" required>
+            <span class="error" id="errorFecha"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+            <span class="error" id="errorEmail"></span>
+
+            <button type="submit">Registrar</button>
+        </form>
+        <button id="preguntasBtn">Responder 3 preguntas</button>
+        <div id="respuestas"></div>
+    </div>
+    <script src="jcodigo java.js"></script>
+</body>
+</html>
