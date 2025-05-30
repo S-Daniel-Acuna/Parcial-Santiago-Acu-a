@@ -1,4 +1,3 @@
-
 function validarApellido(apellido) {
     return /^[Perez]+$/.test(apellido);
 }
